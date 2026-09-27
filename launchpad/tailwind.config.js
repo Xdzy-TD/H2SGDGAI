@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        surface: '#10131f',
+        'surface-dim': '#10131f',
+        'surface-bright': '#363846',
+        'surface-container-lowest': '#0b0d1a',
+        'surface-container-low': '#191b28',
+        'surface-container': '#1d1f2c',
+        'surface-container-high': '#272937',
+        'surface-container-highest': '#323442',
+        'on-surface': '#e1e1f3',
+        'on-surface-variant': '#cfc2d6',
+        'inverse-surface': '#e1e1f3',
+        'inverse-on-surface': '#2d303d',
+        outline: '#988d9f',
+        'outline-variant': '#4d4354',
+        'surface-tint': '#ddb7ff',
+        primary: '#ddb7ff',
+        'on-primary': '#490080',
+        'primary-container': '#b76dff',
+        'on-primary-container': '#400071',
+        'inverse-primary': '#842bd2',
+        secondary: '#d2bbff',
+        'on-secondary': '#3f008e',
+        'secondary-container': '#6001d1',
+        'on-secondary-container': '#c9aeff',
+        tertiary: '#7bd0ff',
+        'on-tertiary': '#00354a',
+        'tertiary-container': '#009bd1',
+        'on-tertiary-container': '#002d40',
+        error: '#ffb4ab',
+        'on-error': '#690005',
+        'error-container': '#93000a',
+        'on-error-container': '#ffdad6',
+        'primary-fixed': '#f0dbff',
+        'primary-fixed-dim': '#ddb7ff',
+        'on-primary-fixed': '#2c0051',
+        'on-primary-fixed-variant': '#6900b3',
+        'secondary-fixed': '#eaddff',
+        'secondary-fixed-dim': '#d2bbff',
+        'on-secondary-fixed': '#25005a',
+        'on-secondary-fixed-variant': '#5a00c6',
+        'tertiary-fixed': '#c4e7ff',
+        'tertiary-fixed-dim': '#7bd0ff',
+        'on-tertiary-fixed': '#001e2c',
+        'on-tertiary-fixed-variant': '#004c69',
+        background: '#10131f',
+        'on-background': '#e1e1f3',
+        'surface-variant': '#323442',
+        brand: {
+          primary: '#A855F7',
+          secondary: '#7C3AED',
+          accent: '#C084FC',
+          tertiary: '#38BDF8',
+          void: {
+            base: '#060814',
+            shell: '#0B0F28'
+          }
+        }
+      },
+      fontFamily: {
+        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+      backgroundImage: {
+        'cosmic-bloom': 'radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.15), transparent 70%)',
+        'gradient-propulsion': 'linear-gradient(135deg, #A855F7 0%, #7C3AED 100%)',
+      }
+    },
+  },
+  plugins: [],
+}

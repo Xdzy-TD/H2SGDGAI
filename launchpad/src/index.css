@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-void-base text-on-background font-body antialiased min-h-screen;
+    background-image: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.15), transparent 70%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-[#0b0f28]/65 backdrop-blur-md border border-brand-primary/20 rounded-2xl;
+  }
+  
+  .glass-panel:hover {
+    @apply border-brand-accent/50;
+    box-shadow: 0 0 35px -5px rgba(168, 85, 247, 0.35);
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-propulsion text-white px-4 py-2 rounded-lg font-heading font-bold transition-all duration-300;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.45);
+  }
+  
+  .btn-primary:hover {
+    @apply border-brand-accent brightness-110;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/5 border border-brand-primary/35 text-white px-4 py-2 rounded-lg font-heading font-bold transition-all duration-300;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-brand-primary/15 border-brand-accent;
+  }
+  
+  .badge {
+    @apply rounded-full px-3 py-1 bg-brand-primary/10 border border-brand-primary/40 font-mono text-brand-accent text-xs font-bold flex items-center gap-2;
+  }
+  
+  .input-field {
+    @apply bg-[#060814]/75 border border-slate-400/20 rounded-lg px-4 py-2 text-white placeholder-slate-400 font-body outline-none transition-all duration-300;
+  }
+  
+  .input-field:focus {
+    @apply border-brand-primary;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+  }
+}
